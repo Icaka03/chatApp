@@ -1,13 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Home from "../src/components/home";
-import { Auth } from "./components/Auth";
+import Home from "./components/Home";
+
 import "./index.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Auth />
     <Home />
   </React.StrictMode>
 );
