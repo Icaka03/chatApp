@@ -2,6 +2,7 @@ import { useState, useRef } from "react";
 import { Auth } from "./Auth.js";
 
 import Cookies from "universal-cookie";
+import { Chat } from "./Chat.js";
 const cookies = new Cookies();
 
 export default function Home() {
@@ -20,7 +21,7 @@ export default function Home() {
   return (
     <div>
       {room ? (
-        <div>Chat</div>
+        <Chat room={room} />
       ) : (
         <div className="room">
           {" "}
