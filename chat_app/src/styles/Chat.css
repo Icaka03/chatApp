@@ -1,0 +1,54 @@
+.header {
+  background-color: #e43f5a;
+  width: 100%;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.chat {
+  width: 80%;
+  height: 80vh;
+  margin: 0 auto;
+}
+
+.user {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.message {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+
+.new-message-form {
+  display: flex;
+  justify-content: center;
+}
+
+.new-message-input {
+  background-color: #1f4068;
+  border: 2px solid #28323f;
+  border-radius: 10px;
+  width: 60%;
+  padding: 15px 10px;
+}
+
+.send-message-button {
+  background-color: #2b4361;
+  border-radius: 10px;
+  border: 2px solid #28323f;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+
+@media only screen and (max-width: 800px) {
+  .new-message-input {
+    width: 90%;
+  }
+  .chat {
+    width: 100%;
+  }
+}

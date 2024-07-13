@@ -9,6 +9,7 @@ import {
   orderBy,
 } from "firebase/firestore";
 import { db, auth } from "../firebase-config";
+import "../styles/Chat.css";
 export const Chat = (props) => {
   const { room } = props;
   const [newMeassage, setNewMeassage] = useState("");
@@ -49,7 +50,7 @@ export const Chat = (props) => {
   return (
     <div className="chat">
       <div className="header">
-        <h1> Welcome to: {room.toUpperCase()}</h1>
+        <h1> Welcome to room: {room.toUpperCase()}</h1>
       </div>
       <div>
         <div className="messaages">
@@ -68,7 +69,9 @@ export const Chat = (props) => {
           onChange={(e) => setNewMeassage(e.target.value)}
           value={newMeassage}
         ></input>
-        <button type="submit">Send</button>
+        <button type="submit" className="send-message-button">
+          Send
+        </button>
       </form>
     </div>
   );

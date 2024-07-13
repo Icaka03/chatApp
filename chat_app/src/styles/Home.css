@@ -1,0 +1,104 @@
+.room-choose {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #37465b;
+  width: 20%;
+  height: 50vh;
+}
+
+.room {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.room-heading {
+  background-color: #e43f5a;
+  color: #fff;
+  padding: 25px 0;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  width: 100%;
+}
+
+.room-input {
+  padding: 10px 0px;
+  margin-top: 30px;
+  background-color: #1f4068;
+  border: 2px solid #28323f;
+  border-radius: 10px;
+}
+
+.room-input::placeholder {
+  color: #fff;
+  text-align: center;
+}
+
+.enter-chat-button {
+  background-color: #2b4361;
+  border-radius: 10px;
+  border: 2px solid #28323f;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+  padding: 10px 20px;
+  margin-top: 20px;
+  font-size: 17px;
+}
+
+.sign-out-button {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #2b4361;
+  border-radius: 10px;
+  border: 2px solid #28323f;
+  padding: 20px 25px;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  width: 80%;
+  cursor: pointer;
+}
+
+.chat-room {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.chat-sign-out-button {
+  width: 25%;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #2b4361;
+  border-radius: 10px;
+  border: 2px solid #28323f;
+  padding: 20px 25px;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  cursor: pointer;
+}
+@media only screen and (min-width: 1400px) {
+  .room-input {
+    width: 260px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .room-choose {
+    width: 90%;
+  }
+  .chat-sign-out-button {
+    width: 90%;
+  }
+  .chat-room {
+    width: 90%;
+  }
+}

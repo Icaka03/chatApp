@@ -32,3 +32,9 @@
   width: 80%;
   cursor: pointer;
 }
+
+@media only screen and (max-width: 800px) {
+  .auth {
+    width: 90%;
+  }
+}
