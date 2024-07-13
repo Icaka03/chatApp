@@ -30,10 +30,10 @@
   background-color: #1f4068;
   border: 2px solid #28323f;
   border-radius: 10px;
+  color: #fff;
 }
 
 .room-input::placeholder {
-  color: #fff;
   text-align: center;
 }
 

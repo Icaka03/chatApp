@@ -34,6 +34,7 @@
   border-radius: 10px;
   width: 60%;
   padding: 15px 10px;
+  color: #fff;
 }
 
 .send-message-button {
@@ -50,5 +51,8 @@
   }
   .chat {
     width: 100%;
+  }
+  .header {
+    border-radius: 10px;
   }
 }
