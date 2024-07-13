@@ -52,10 +52,14 @@ export const Chat = (props) => {
         <h1> Welcome to: {room.toUpperCase()}</h1>
       </div>
       <div>
-        {" "}
-        {messages.map((message) => (
-          <h1>{message.text}</h1>
-        ))}
+        <div className="messaages">
+          {messages.map((message) => (
+            <div className="message" key={message.id}>
+              <span className="user">{message.user}: </span>
+              {message.text}
+            </div>
+          ))}
+        </div>
       </div>
       <form onSubmit={handleSubmit} className="new-message-form">
         <input
